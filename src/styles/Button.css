@@ -1,0 +1,45 @@
+button {
+    border-radius: 5px;
+    padding: 11px;
+    border: 1px solid lightgray;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#createBtn {
+    border-radius: 0 5px 5px 0;
+}
+
+.answerBtn, .resultBtn {
+    border: 1px solid #198754;
+    background-color: white;
+    color: #198754;
+    margin: 10px;
+}
+
+.answerBtn:hover, .selectedAnswerBtn, .correctAnswerBtn {
+    color: white;
+    background-color: #198754;
+}
+
+.resultBtn:hover {
+    cursor:auto;
+}
+
+.wrongAnswerBtn {
+    color: white;
+    background-color: red;
+}
+
+.submitBtn {
+    background-color: #6c757d;
+    color: white;
+    text-transform: lowercase;
+    width: 500px;
+}
+
+.newQuizBtn {
+    background-color: #6c757d;
+    color: white;
+    width: 500px;
+}

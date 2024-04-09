@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+}
+
+.questions {
+    margin-bottom: 50px;
+}

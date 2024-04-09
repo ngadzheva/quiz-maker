@@ -1,0 +1,18 @@
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.score {
+    width: 350px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

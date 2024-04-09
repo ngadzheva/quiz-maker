@@ -1,0 +1,16 @@
+select {
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    width: 500px;
+}
+
+#categorySelect {
+    border-radius: 5px 0 0 5px;
+}
+
+#difficultySelect {
+    border-radius: 0;
+}
