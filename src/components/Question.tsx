@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react';
 import { QuestionAnswer, QuestionWithAnswers } from '../interfaces/Question';
 import Button from './Button';
+import { decode } from 'html-entities';
 
 interface QuestionProps {
     question: QuestionWithAnswers;
@@ -23,20 +24,20 @@ export default function Question({ question, selectedAnswers, handleAnswerClick,
 
     return (
         <section>
-            <p>{question.question}</p>
+            <p>{decode(question.question)}</p>
             {question.answers.map(answer => (
                 readonly ? (
                     <Button
-                        key={answer.text}
+                        key={decode(answer.text)}
                         className={`resultBtn ${getAnswerClass(answer)}`}
-                        text={answer.text}
+                        text={decode(answer.text)}
                     />
                 ) : (
                     <Button
-                        key={answer.text}
+                        key={decode(answer.text)}
                         className={`answerBtn ${selectedAnswers.includes(answer) && 'selectedAnswerBtn'}`}
                         handleClick={() => handleAnswerClick?.(answer)}
-                        text={answer.text}
+                        text={decode(answer.text)}
                     />
                 )
             ))}
